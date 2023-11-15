@@ -1,0 +1,115 @@
+.petInfo {
+  margin: 2rem;
+
+  &__title {
+    font-size: 2rem;
+    color: #60a487;
+    margin-bottom: 1rem;
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+
+    &-question {
+      color: black;
+      font-weight: 600;
+    }
+  }
+
+  &__characteristics {
+    margin-top: 2rem;
+  }
+
+  &__characteristic {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+
+  &__behavior {
+    margin-top: 1rem;
+  }
+
+  &__behavior-description {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  &__interaction {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  &__care {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    & {
+      margin: 2rem 5%;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__info,
+    &__characteristic,
+    &__description,
+    &__behavior-description,
+    &__interaction,
+    &__care {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.carousel-container {
+  width: 100%;
+  margin: 5% 0% 5% 10%;
+}
+
+.alice-carousel__wrapper {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.alice-carousel__stage-item * {
+  width: 80%;
+  object-fit: contain;
+  height: 300px;
+  vertical-align: bottom;
+  object-position: top;
+  background: rgba(210, 237, 224, 1);
+  border-radius: 10px;
+}
+
+.alice-carousel > ul.alice-carousel__dots {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 5px;
+  left: 23%;
+  @media all and (min-width: 768px) {
+    left: 32%;
+  }
+  @media all and (min-width: 1200px) {
+    left: 37%;
+  }
+}

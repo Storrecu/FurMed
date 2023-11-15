@@ -1,0 +1,13 @@
+.footer {
+  border-top: 5px solid #e9f6f0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  &-mail {
+    text-decoration: none;
+    color: #4fa583;
+    font-weight: 600;
+  }
+}

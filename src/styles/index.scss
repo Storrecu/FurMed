@@ -1,0 +1,27 @@
+//estilos generales
+
+// foto perfil mascotas
+
+main {
+  background-color: #f0f0f0; /* Color gris claro, puedes ajustar el código de color */
+  margin: 0; /* Para asegurarte de que no haya márgenes predeterminados */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  .label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .input {
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

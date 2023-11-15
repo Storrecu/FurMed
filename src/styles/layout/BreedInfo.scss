@@ -1,0 +1,57 @@
+.breedInfo {
+  margin-bottom: 5rem;
+  padding: 2rem;
+
+  &__title {
+    font-size: 2rem;
+    color: #60a487;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 1rem;
+    max-width: 50%;
+  }
+
+  &__section-title {
+    font-size: 2rem;
+    color: #60a487;
+    margin-top: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+
+    & strong {
+      color: black;
+      font-weight: 600;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      margin: 2rem 5%;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__section-title {
+      font-size: 2.5rem;
+    }
+
+    &__item {
+      font-size: 1.8rem;
+    }
+  }
+}

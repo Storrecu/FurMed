@@ -1,0 +1,284 @@
+.header {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+
+  &_menu-toggle {
+    width: 10%;
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    @media all and (min-width: 768px) {
+      font-size: 3rem;
+    }
+
+    &-icon {
+      color: #393e46;
+    }
+  }
+
+  &_link {
+    width: 70%;
+    margin: auto;
+  }
+
+  &_img {
+    width: 60%;
+    margin-left: 25%;
+    @media all and (min-width: 768px) {
+      width: 40%;
+      margin-left: 35%;
+    }
+    @media all and (min-width: 1200px) {
+      width: 30%;
+      margin-left: 35%;
+    }
+  }
+
+  &.menu-open {
+    .menu-section {
+      transform: translateX(0);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .menu-overview {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-section {
+    position: absolute;
+    top: 15%;
+    height: 100%;
+    width: 200px;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    padding: 1rem;
+    height: 26%;
+    border-radius: 10px;
+
+    @media all and (max-width: 767px) {
+      width: 75%;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1200px) {
+      width: 40%;
+    }
+
+    @media all and (min-width: 1201px) {
+      width: 25%;
+    }
+
+    &-close {
+      position: relative;
+      z-index: 2;
+      text-align: right;
+
+      &-xmark {
+        padding: 5px;
+        cursor: pointer;
+        color: #60a487;
+        font-size: 1.5rem;
+
+        @media all and (min-width: 768px) and (max-width: 1200px) {
+          // top: 40px;
+          left: -10px;
+          font-size: 2rem;
+        }
+        @media all and (min-width: 1201px) {
+          // top: 43px;
+          left: -20px;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  &-log {
+    display: inline-block;
+    padding: 4%;
+    margin-bottom: 1%;
+    @media all and (min-width: 768px) {
+      font-size: 3rem;
+    }
+
+    &-icon {
+      color: #4ecca3;
+      cursor: pointer;
+    }
+  }
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff;
+  padding: 2rem 1rem 0;
+  font-size: 1rem;
+  width: 70%;
+  border-radius: 10px;
+
+  @media all and (min-width: 768px) {
+    width: 130%;
+    font-size: 1.5rem;
+  }
+  @media alld and (min-width: 1200px) {
+    width: 180%;
+    font-size: 2rem;
+  }
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: all 0.7s ease-out;
+  transition-delay: 0.3s;
+  letter-spacing: 2px;
+
+  @media all and (min-width) {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  padding: 1rem;
+  color: #393e46;
+  text-decoration: none;
+  font-size: 10px;
+  @media all and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 16px;
+    padding: 2rem;
+  }
+  @media all and (min-width: 1201px) {
+    font-size: 20px;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.socialMedia-sec {
+  display: flex;
+  text-align: center;
+  height: 500px;
+  margin-top: 6rem;
+
+  &-text {
+    text-transform: none;
+    font-size: 1rem;
+
+    @media all and (min-width: 768px) and (max-width: 1200px) {
+      font-size: 2rem;
+    }
+    @media all and (min-width: 1201px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .fa-github {
+    color: #60a487;
+    font-size: 1rem;
+    margin: 2rem;
+
+    @media all and (min-width: 768px) and (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+    @media all and (min-width: 1201px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .fa-instagram {
+    color: #60a487;
+    font-size: 1rem;
+    margin: 2rem;
+
+    @media all and (min-width: 768px) and (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+    @media all and (min-width: 1201px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .fa-linkedin {
+    color: #60a487;
+    font-size: 1rem;
+    margin: 2rem;
+
+    @media all and (min-width: 768px) and (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+    @media all and (min-width: 1201px) {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.enter-section {
+  text-transform: none;
+  margin-bottom: 3rem;
+  @media all and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.log-sec {
+  text-decoration: none;
+  text-align: left;
+  color: #60a487;
+  padding: 0.5rem;
+  font-size: 12px;
+  @media all and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 16px;
+  }
+  @media all and (min-width: 1201px) {
+    font-size: 20px;
+  }
+}
+
+.fa-right-to-bracket {
+  padding: 0.5rem;
+}
+
+.fa-user-plus {
+  margin-left: 1rem;
+}
