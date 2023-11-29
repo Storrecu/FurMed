@@ -24,6 +24,8 @@
   border: none;
   padding: 0;
   margin-bottom: 1rem;
+  max-width: 80%;
+  margin: 2rem auto;
 }
 
 .register__legend {
@@ -81,4 +83,10 @@
 
 .register__form {
   margin: 2rem auto;
+}
+
+@media all and (min-width: 768px) {
+  .register__fieldset {
+    max-width: 55%;
+  }
 }
