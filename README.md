@@ -23,7 +23,7 @@ Estos últimos además, podrán aprovechar la funcionalidad de la web de añadir
 4. Diseño y creación de la base de datos con las relaciones establecidas.
 5. Maqueta del proyecto publicada en este repositorio.
 
-## Mejoras furuas:
+## Mejoras futuras:
 1. Implementar un usuario "secundario" o invitado que pueda ver la información de la mascota. 
 2. En función de los datos de tus mascotas, mostrar un contenido en el apartado "curiosidades" u otro. 
 3. ... más ideas próximamente.
