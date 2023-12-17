@@ -16,6 +16,8 @@ import PetsList from './pets/PetsList';
 import Pet from './pets/Pet';
 import PetInfo from './pets/PetInfo';
 import PetInfoVet from './pets/PetInfoVet';
+import AddPet from './pets/AddPet';
+import RemovePet from './pets/RemovePets';
 
 function App() {
   //states
@@ -41,6 +43,8 @@ function App() {
           <Route path="pet" element={<Pet />}></Route>
           <Route path="petInfo" element={<PetInfo />}></Route>
           <Route path="petInfoVet" element={<PetInfoVet />}></Route>
+          <Route path="addPet" element={<AddPet />}></Route>
+          <Route path="removePet" element={<RemovePet />}></Route>
         </Routes>
         <Footer />
       </main>

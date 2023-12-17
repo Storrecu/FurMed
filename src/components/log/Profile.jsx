@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/layout/Profile.scss';
 
 const Profile = () => {
@@ -8,7 +8,11 @@ const Profile = () => {
         <h3 className="profile__title">
           Bienvenid@! Este es tu espacio personal.
         </h3>
-        <h4 className="profile__subtitle">Modificar/añadir datos</h4>
+        <h4 className="profile__subtitle">Tus datos personales</h4>
+        <p>
+          Aquí puedes consultar tus datos personales, así como modificarlos si
+          es preciso.
+        </p>
         <form className="profile__form">
           <label htmlFor="name" className="profile__label">
             Nombre
@@ -85,6 +89,9 @@ const Profile = () => {
             defaultValue="********"
           />
           <button className="profile__button">Enviar</button>
+
+          <Link to="/addPet">Añadir mascota</Link>
+          <Link to="/removePet">Borrar mascota</Link>
         </form>
       </div>
     </>
