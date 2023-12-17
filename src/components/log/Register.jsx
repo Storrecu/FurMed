@@ -5,8 +5,20 @@ const Register = () => {
     <>
       <form className="register__form">
         <h4 className="register__form-title">Fromulario de registro</h4>
+
         <fieldset className="register__fieldset">
           <legend className="register__legend">Información del usuario</legend>
+
+          <label htmlFor="userName" className="register__label">
+            Nombre de Usuario
+          </label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            className="register__input"
+          />
+
           <label htmlFor="name" className="register__label">
             Nombre
           </label>
@@ -16,6 +28,7 @@ const Register = () => {
             name="name"
             className="register__input"
           />
+
           <label htmlFor="surnames" className="register__label">
             Apellidos
           </label>
@@ -25,6 +38,7 @@ const Register = () => {
             name="surnames"
             className="register__input"
           />
+
           <label htmlFor="phone" className="register__label">
             Teléfono
           </label>
@@ -34,6 +48,7 @@ const Register = () => {
             name="phone"
             className="register__input"
           />
+
           <label htmlFor="email" className="register__label">
             Correo electrónico
           </label>
@@ -43,6 +58,7 @@ const Register = () => {
             name="email"
             className="register__input"
           />
+
           <label htmlFor="password" className="register__label">
             Contraseña
           </label>
@@ -53,6 +69,7 @@ const Register = () => {
             className="register__input"
           />
         </fieldset>
+
         <fieldset className="register__fieldset">
           <legend className="register__legend">Política de privacidad</legend>
           <div className="register__checkbox">
@@ -60,6 +77,7 @@ const Register = () => {
             <span>He leído y acepto la Política de Privacidad y Cookies</span>
           </div>
         </fieldset>
+
         <button className="register__button">Enviar</button>
       </form>
     </>
