@@ -29,7 +29,7 @@ Estos últimos además, podrán aprovechar la funcionalidad de la web de añadir
 3. ... más ideas próximamente.
 
 ## Visualización del proyecto: 
-Podeis ver la maqueta del proyecto en este enlace: [https://storrecu.github.io/personal-project/](https://storrecu.github.io/FurMed/)
+Podeis ver la maqueta del proyecto en este enlace: [storrecu.github.io/FurMed/](https://storrecu.github.io/FurMed/)
 
 ## Contribución: 
 No dudes en hacerme un **pull request** con aquellos cambios o mejoras que creas que puedan encajar en este proyecto. 
