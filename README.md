@@ -35,6 +35,6 @@ Podeis ver la maqueta del proyecto en este enlace: [storrecu.github.io/FurMed/](
 No dudes en hacerme un **pull request** con aquellos cambios o mejoras que creas que puedan encajar en este proyecto. 
 Así mismo, no seas una persona tímida y **¡déjame tu feedback!**
 
-**Gracias por el tiempo que has dedicado a revisar este ejercicio**
+**Gracias por el tiempo que has dedicado a revisar este repositorio**
 
 
